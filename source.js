@@ -3,11 +3,14 @@ var timeField = document.getElementById("time")
 
 function setTime(){
     let currentDate = new Date();
-    let hours = currentDate.getHours()
-    let minutes =currentDate.getMinutes()
-    let seconds = currentDate.getSeconds()
+    let hours = currentDate.getHours().toString();
+    let minutes =currentDate.getMinutes().toString();
+    let seconds = currentDate.getSeconds().toString();
+
+    console.log()
 
     if(hours.length<2){
+        
         hours = "0"+hours;
     }
     if(minutes.length<2){
